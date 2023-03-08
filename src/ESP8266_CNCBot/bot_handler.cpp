@@ -4,13 +4,12 @@
 #include <ArduinoJson.h>
 
 #include "wifi_handler.h"
-#include "bot_param.h"
 #include "net_param.h"
 #include "gpio_handler.h"
 
 #define LISTEN_PERIOD	10000
 
-UniversalTelegramBot bot(CHARLIE_TOKEN, client);
+UniversalTelegramBot bot(BOT_TOKEN, client);
 
 unsigned int 	listen_counter	= 0;
 bool			alarm_enable	= 0;
